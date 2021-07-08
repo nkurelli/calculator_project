@@ -1,1 +1,6 @@
-print("Hello calculator user!")
+gemini = {"aries":1, "leo":1, "sagittarius":.75, "taurus": 0, "virgo": .75, "capricorn": .75, "gemini":1, "libra":1, "aquarius":1, "cancer":0, "scorpio":0, "pisces":0}
+libra = {"aries":.75, "leo":1, "sagittarius":1, "taurus": .75, "virgo": 0, "capricorn": 0, "gemini":1, "libra":1, "aquarius":1, "cancer":0, "scorpio":0, "pisces":.75}
+aquarius = {"aries":1, "leo":1, "sagittarius":1, "taurus": 0, "virgo": 0, "capricorn": 0, "gemini":1, "libra":1, "aquarius":1, "cancer":0, "scorpio":.75, "pisces":.75}
+cancer = {"aries":0, "leo":.75, "sagittarius":.75, "taurus": 1, "virgo": 1, "capricorn": 1, "gemini":0, "libra":0, "aquarius":0, "cancer":1, "scorpio":1, "pisces":1}
+scorpio = {"aries":.75, "leo":.75, "sagittarius":0, "taurus": 1, "virgo": 1, "capricorn": 1, "gemini":0, "libra":0, "aquarius":0, "cancer":1, "scorpio":1, "pisces":1}
+pisces = {"aries":.75, "leo":.75, "sagittarius":.75, "taurus": 1, "virgo": .75, "capricorn": 1, "gemini":0, "libra":0, "aquarius":0, "cancer":1, "scorpio":1, "pisces":1}
