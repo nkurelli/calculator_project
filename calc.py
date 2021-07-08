@@ -1,4 +1,4 @@
-def my_name(my_name, partner_name):
+def name(my_name, partner_name):
     count = 0 
     my_name = my_name.casefold()
     partner_name = partner_name.casefold()
@@ -12,15 +12,41 @@ def my_name(my_name, partner_name):
     if(partner_vowels==my_vowels):
         count+=.5
     return count
-
-def my_color(my_color, partner_color):
+def age(my_age, partner_age):
+    count = 0
+    my_age = int(my_age)
+    partner_age = int(partner_age)
+    gap = abs(my_age - partner_age)
+    if gap == 0:
+        count+=1
+    elif gap == 1:
+        count+=.75
+    elif gap == 2:
+        count+=.5
+    elif gap == 3:
+        count+=.25
+    return count
+def fav_color(my_color, partner_color):
     count = 0
     my_color = my_color.casefold()
     partner_color = partner_color.casefold()
     if my_color == partner_color:
         count+=1
     return count
-
+def fav_candy(my_candy, partner_candy):
+    count = 0
+    my_candy = my_candy.casefold()
+    partner_candy = partner_candy.casefold()
+    if my_candy == partner_candy:
+        count+=1
+    return count
+def fav_icecream(my_ic, partner_ic):
+    count = 0
+    my_ic = my_ic.casefold()
+    partner_ic = partner_ic.casefold()
+    if my_ic == partner_ic:
+        count+=1
+    return count
 def my_zodiac(my_sign, partner_sign):
     aries = {"aries":1, "leo":1, "sagittarius":1, "taurus":0, "virgo":.75, "capricorn":0, "gemini":1, "libra":1, "aquarius":1, "cancer":0, "scorpio":0, "pisces":.75}
     leo = {"aries":1, "leo":1, "sagittarius":1, "taurus":.75, "virgo":0, "capricorn":0, "gemini":1, "libra":1, "aquarius":.75, "cancer":.75, "scorpio":.75, "pisces":.75}
