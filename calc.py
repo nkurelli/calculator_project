@@ -1,6 +1,23 @@
 def my_name(my_name, partner_name):
-    count = 0   
+    count = 0 
+    my_name = my_name.casefold()
+    partner_name = partner_name.casefold()
     if(len(my_name)==len(partner_name)):
+        count+=.5
+    my_vowels = 0
+    partner_vowels = 0
+    for vowel in "aeiou":
+        my_vowels+=my_name.count(vowel)
+        partner_vowels+=partner_name.count(vowel)
+    if(partner_vowels==my_vowels):
+        count+=.5
+    return count
+
+def my_color(my_color, partner_color):
+    count = 0
+    my_color = my_color.casefold()
+    partner_color = partner_color.casefold()
+    if my_color == partner_color:
         count+=1
     return count
 
